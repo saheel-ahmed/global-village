@@ -24,11 +24,12 @@ h1 {
     width: 80%;
     background-color: rgba(0, 0, 0, .4);
     border: none;
-    padding: 4%;
+    padding: 2%;
     font-size: 36px;
     text-align: center;
     color: #fff;
-    margin: 10px 0px;
+    margin: 10px auto;
+    display: block;
 }
 
 button {

@@ -22,8 +22,8 @@ $("#btnQRCode").click(function() {
     $('#qrcode').qrcode({
         render: "canvas",
         text: JSON.stringify(qrData),
-        width: 256,
-        height: 256,
+        width: 200,
+        height: 200,
         background: "#ffffff",
         foreground: "#000000",
         src: './img/gv-logo.png',
