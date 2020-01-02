@@ -1,6 +1,5 @@
 body {
     background-image: url('./../img/bg-app.png');
-    font-family: 'Raleway', sans-serif;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -10,12 +9,16 @@ body {
     overflow: hidden;
 }
 
+* {
+    font-family: 'Coda', sans-serif;
+}
+
 h1 {
     font-weight: 100;
 }
 
 .demo img {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -23,8 +26,8 @@ h1 {
     width: 80%;
     background-color: rgba(0, 0, 0, .4);
     border: none;
-    padding: 2%;
-    font-size: 36px;
+    padding: 4%;
+    font-size: 30px;
     text-align: center;
     color: #fff;
     margin: 10px auto;

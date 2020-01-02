@@ -27,8 +27,8 @@ $("#btnQRCode").click(function() {
         background: "#ffffff",
         foreground: "#000000",
         src: './img/gv-logo.png',
-        imgWidth: 32,
-        imgHeight: 32
+        imgWidth: 64,
+        imgHeight: 64
     });
 
     $(".price").hide();
@@ -37,6 +37,9 @@ $("#btnQRCode").click(function() {
 });
 
 $(document).on('click', '.close', function() {
+    $('input[name="amount"]').val('');
+    $('input[name="orderno"]').val('');
+
     $('#qrcode').html('');
     $(".qr").hide();
     $('.price').show();
