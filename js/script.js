@@ -38,10 +38,19 @@ $("#btnQRCode").click(function() {
 });
 
 $(document).on('click', '.close', function() {
+    fnReset();
+});
+
+$(document).on('click', '.qrdone', function() {
+    fnReset();
+});
+
+
+function fnReset() {
     $('input[name="amount"]').val('');
     $('input[name="orderno"]').val('');
 
     $('#qrcode').html('');
     $(".qr").hide();
     $('.price').show();
-});
+}

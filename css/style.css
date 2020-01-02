@@ -7,6 +7,8 @@ body {
     text-align: center;
     max-height: 100vh;
     overflow: hidden;
+    background-color: #000;
+    background-size: cover;
 }
 
 * {
@@ -17,7 +19,11 @@ h1 {
     font-weight: 100;
 }
 
-.demo img {
+h1 small {
+    font-size: 14px;
+}
+
+.ft-logo {
     width: 60%;
     margin: 0 auto;
 }
