@@ -13,10 +13,11 @@ $("#btnQRCode").click(function() {
     }
 
     const qrData = {
-        qr_type: 1,
-        card_no: "5273269582041620",
-        amount: amt,
-        ref_no: refno
+        "qr_type": "1",
+        "card_no": "5273269582041620",
+        "amount": amt,
+        "ref_no": refno,
+        "merchant": "Mint Middle East LLC"
     };
 
     $('#qrcode').qrcode({
