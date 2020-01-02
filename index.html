@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        @import url('https:/fonts.googleapis.com/css?family=Raleway&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>QR Code - Global Village</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col demo">
+
+                <h1 class="animated fadeInDown delay-1s">
+                    Welcome <br />to
+                    <br /> Global Village
+                </h1>
+
+                <div class="price animated zoomIn">
+
+                    <div class="group-form animated fadeInLeft delay-1s">
+                        <p class="animated fadeIn delay-2s">
+                            Please enter the reference code.
+                        </p>
+                        <input type="text" class="form-control" placeholder="#OrderNo" value="" name="orderno" />
+                        <p class="animated fadeIn delay-2s">
+                            Please enter the amount.
+                        </p>
+                        <input type="text" class="form-control" placeholder="0.00" value="0.00" name="amount" />
+                    </div>
+                    <button type="button" id="btnQRCode" class="animated fadeInRight delay-1s">Generate QR</button>
+                </div>
+
+                <div class="qr animated zoomIn">
+                    <a href="javascript:void(0);" class="close">&times;</a>
+                    <div id="qrcode"></div>
+                    <a href="javascript:void(0);" class="qrdone">&#10003; Done</a>
+                </div>
+
+
+                <img src="./img/global-app-bg.png" class="ft-logo animated fadeInUp delay-1s" />
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/gmqrcode.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        window.addEventListener("load", ev => {
+            if ('serviceWorker' in navigator) {
+                try {
+                    navigator.serviceWorker.register('./js/sw.js');
+                    console.info("SW Registered!");
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
